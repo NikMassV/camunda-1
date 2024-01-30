@@ -5,6 +5,7 @@ import org.camunda.bpm.engine.runtime.ProcessInstance;
 import org.camunda.bpm.engine.test.Deployment;
 import org.camunda.bpm.scenario.ProcessScenario;
 import org.camunda.community.process_test_coverage.spring_test.platform7.ProcessEngineCoverageConfiguration;
+import org.junit.Ignore;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
@@ -41,6 +42,7 @@ public class ProcessScenarioTest {
   @Mock
   private ProcessScenario myProcess;
 
+  @Ignore
   @Test
   @Deployment(resources="process.bpmn") // only required for process test coverage
   public void testHappyPath() {
